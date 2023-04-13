@@ -1,11 +1,11 @@
 package employees.views;
 
-import static employees.Utility.input;
+import static Wine_yejin.util.Utility.input;
 import static employees.filters.WineSelectorByFilter.*;
 
 public class EmpWineCategoryView {
 
-    // 와인리스트 확인 메서드
+    // 와인을 카테고리로 선택 할 수 있는 메서드
     public static void empShowWineList() {
 
         while (true) {
@@ -15,28 +15,19 @@ public class EmpWineCategoryView {
         System.out.println("---------------------------------------");
         String filterNum = input(">> ");
             switch (filterNum) {
-                case "1":
-                    // 나라별
-                    wineCountrySelect();
-                    break;
 
-                case "2":
-                    // 타입별
-                    wineTypeSelect();
-                    break;
+                case "1": wineCountrySelect(); break; // 나라별
 
-                case "3":
-                    // 금액별
-                    winePriceSelect();
-                    break;
+                case "2": wineTypeSelect(); break; // 타입별
+
+                case "3": winePriceSelect(); break; // 금액별
 
                 case "9":
-                    System.out.println("뒤로 돌아갑니다.\n\n\n");
+                    System.out.println("뒤로 돌아갑니다.\n\n");
                     return;
 
                 default:
                     System.out.println("번호를 제대로 입력해주세요");
-                    break;
 
             }
         }

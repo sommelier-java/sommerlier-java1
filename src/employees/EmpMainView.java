@@ -1,6 +1,6 @@
 package employees;
 
-import static employees.Utility.*;
+import static Wine_yejin.util.Utility.input;
 import static employees.views.EmpIncenView.empCheckMyIncentive;
 import static employees.views.EmpWineCategoryView.empShowWineList;
 

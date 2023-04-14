@@ -1,13 +1,28 @@
 package Wine_yejin;
 
+import WineRepository.Wine;
+
 import java.io.Serializable;
+import java.util.List;
 
 public class UserInfo  implements Serializable {
+
+    private static final long serialVersionUID = 1L;
     private String userId;
     private String userPwd;
     private String userName;
     private String userAddr;
     private int userAge;
+    private List<Wine> userbag;
+
+    public List<Wine> getUserbag() {
+        return userbag;
+    }
+
+    public void setUserbag(List<Wine> userbag) {
+        this.userbag = userbag;
+    }
+
 
     public UserInfo() {
     }

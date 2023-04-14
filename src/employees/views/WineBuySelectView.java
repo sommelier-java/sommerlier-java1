@@ -4,12 +4,10 @@ package employees.views;
 import WineRepository.Wine;
 
 import java.util.List;
-
 import static Wine_yejin.util.Utility.input;
 import static employees.EmpMainView.employeesMainPageView;
 import static employees.filters.EmpOneByOne.dottedPrint;
 import static employees.filters.SelectedMethods.filteredWineList;
-
 public class WineBuySelectView {
     // ----------- 구매 할 와인을 선택하는 메서드 시작  ** 3개의 필터에 동일 적용 ------------
 

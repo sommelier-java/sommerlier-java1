@@ -5,11 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="664c48a0-00df-459d-9c2d-ecbce9abfb1f" name="변경" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/src/employees/MyEmployees.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/employees/EmpMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/employees/EmpMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/employees/EmpMainView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/employees/EmpMainView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/employees/filters/SelectedMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/employees/filters/SelectedMethods.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UserReal/UserWineView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserReal/UserWineView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wine_yejin/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wine_yejin/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wine_yejin/MainView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wine_yejin/MainView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/employees/EmpMainView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/employees/EmpMainView.java" afterDir="false" />
+>>>>>>> main
       <change beforePath="$PROJECT_DIR$/src/employees/views/WineBuySelectView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/employees/views/WineBuySelectView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,20 +25,10 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProjectId" id="2OMhSIgKLbriHKewVlewS7C5tiW" />
+  <component name="ProjectId" id="2OPDOZpg9TfIpu8gpeObtrUlsEn" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -57,7 +55,7 @@
       <recent name="D:\untitled\src" />
     </key>
   </component>
-  <component name="RunManager" selected="애플리케이션.EmpMain">
+  <component name="RunManager" selected="애플리케이션.main">
     <configuration name="EmpMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="employees.EmpMain" />
       <module name="untitled" />
@@ -99,9 +97,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="애플리케이션.main" />
         <item itemvalue="애플리케이션.EmpMain" />
         <item itemvalue="애플리케이션.EmpOneByOne" />
-        <item itemvalue="애플리케이션.main" />
       </list>
     </recent_temporary>
   </component>
@@ -109,7 +107,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="디폴트 작업">
       <changelist id="664c48a0-00df-459d-9c2d-ecbce9abfb1f" name="변경" comment="" />
-      <created>1681376359548</created>
+      <created>1681453291365</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1681376359548</updated>
@@ -123,5 +121,6 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+    &gt;&gt;&gt;&gt;&gt;&gt;&gt; 39a85f627ca29bffa34dfdeb9de3616b4fd99944
   </component>
 </project>

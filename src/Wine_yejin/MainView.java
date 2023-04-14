@@ -1,5 +1,6 @@
 package Wine_yejin;
 
+import UserReal.UserWineView;
 import Wine_yejin.EmpManage.EmpManaging;
 
 import java.util.List;
@@ -10,11 +11,13 @@ import static employees.EmpMainView.employeesMainPageView;
 
 public class MainView {
     static TotalUserRepository totalUserRepository = new TotalUserRepository();
-    static List<UserInfo> userInfoList = TotalUserRepository.export_user();
+//    static List<UserInfo> userInfoList = TotalUserRepository.export_user();
     static List<Employ> employInfoList = TotalUserRepository.export_emp();
 
+    public MainView() {
+    }
 
-//    static UserInfo userInfo = new UserInfo();
+    //    static UserInfo userInfo = new UserInfo();
 //    static Employ employ = new Employ();
 //    static Manager manager = new Manager();
 
@@ -23,6 +26,7 @@ public class MainView {
 
     //실행 함수
     public static void start() {
+        TotalUserRepository.getUser();
         while (true) {
             MainScreen();
         }
@@ -38,12 +42,15 @@ public class MainView {
         switch (Integer.parseInt(input(">>"))) {
             case 1:
                 ManagerLogin();
+                break;
             case 2:
                 employeesMainPageView();
-
                 EmpView();
+                break;
             case 3:
-                userView();
+//                userView();
+                new UserWineView().view();
+                break;
             default:
                 System.out.println("제대로 입력해주세요");
                 MainScreen();
@@ -75,7 +82,7 @@ public class MainView {
             System.out.println("로그인 성공!!!");
             System.out.println("와인 선택 페이지로 넘어갑니다 ~");
             //와인 선택 함수 보이기
-
+//            new UserWineView().view();
         } else {
             System.out.println("로그인 실패 !!! 다시 입력해주세요!");
             EmpView();
@@ -98,7 +105,7 @@ public class MainView {
                 System.out.println("로그인 성공!!!");
                 System.out.println("와인 선택 페이지로 넘어갑니다 ~");
                 //와인 선택 함수 보이기
-//                .view();
+//                new UserWineView().view();
             } else {
                 System.out.println("로그인 실패 !!! 다시 입력해주세요!");
                 userView();
@@ -125,10 +132,13 @@ public class MainView {
             MainScreen();
         } else {
             //회원 추가하기
+            //회원추가 했을때 save파일로 들어가도록!!!
+            UserInfo userInfo = new UserInfo(id, pwd, name, address, age);
+
+            TotalUserRepository.saveUser();
+
         }
 
-        TotalUserRepository.newUser(new UserInfo(id, pwd, name, address, age));
-        TotalUserRepository.saveUser();
 
 
     }

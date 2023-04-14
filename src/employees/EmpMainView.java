@@ -1,6 +1,9 @@
 package employees;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 39a85f627ca29bffa34dfdeb9de3616b4fd99944
 import static Wine_yejin.util.Utility.input;
 import static employees.views.EmpIncenView.empCheckMyIncentive;
 import static employees.views.EmpWineCategoryView.empShowWineList;

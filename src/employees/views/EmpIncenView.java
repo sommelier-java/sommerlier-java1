@@ -15,10 +15,7 @@ public class EmpIncenView {
             System.out.println("---------------------------------------");
             String empIncenPage = input(">> ");
             switch (empIncenPage) {
-                case "1":
-                    // 와인리스트 확인 함수
-                    empShowWineList();
-                    break;
+                case "1": empShowWineList(); break;// 와인리스트 확인 함수
 
                 case "9":
                     System.out.println("뒤로 돌아갑니다.\n\n\n");

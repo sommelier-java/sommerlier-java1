@@ -47,7 +47,7 @@
       <recent name="D:\untitled\src" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="애플리케이션.main">
     <configuration name="EmpMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="employees.EmpMain" />
       <module name="untitled" />
@@ -89,9 +89,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="애플리케이션.main" />
         <item itemvalue="애플리케이션.EmpMain" />
         <item itemvalue="애플리케이션.EmpOneByOne" />
-        <item itemvalue="애플리케이션.main" />
       </list>
     </recent_temporary>
   </component>

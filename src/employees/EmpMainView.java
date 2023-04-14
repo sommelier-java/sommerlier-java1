@@ -9,6 +9,7 @@ public class EmpMainView {
     // 사원이 로그인 하면 바로 보이는 페이지
     public static void employeesMainPageView() {
 
+//        MyEmployees
 
         System.out.println("너무 귀한 우리 사원님 재방문을 환영합니다.");
         while (true) {

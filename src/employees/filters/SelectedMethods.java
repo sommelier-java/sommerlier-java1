@@ -61,10 +61,7 @@ public class SelectedMethods {
                 .collect(toList());
         filteredWineList.forEach(w ->
                 {
-                    String x = " [ 와인 가격 = " + w.getPrice()
-                            + " | 원산지 = " + w.getOrigin()
-                            + " | 이름 = " + w.getName().substring(0, 6) + " ]";
-                    System.out.println( x );
+                    System.out.printf("[ 와인 가격 : %7.2f | 원산지 : %5s | 이름 : %5s ]\n", w.getPrice(), w.getOrigin(), w.getName());
                 }
         );
 

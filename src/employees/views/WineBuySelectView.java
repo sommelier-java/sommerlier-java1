@@ -45,6 +45,8 @@ public class WineBuySelectView {
 
         Wine wine = filteredWineList.get(wineNumber - 1);
 
+        List<Wine> wineList = filteredWineList;
+        wineList.remove(wine);
         double price = wine.getPrice();
         double empPrice = price - (price / 5.0);
         System.out.println("[ 와인 명 = " + wine.getName() + " ]");

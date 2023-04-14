@@ -5,7 +5,8 @@ import WineRepository.Wine;
 
 import java.util.List;
 
-import static employees.Utility.input;
+import static Wine_yejin.util.Utility.input;
+
 
 public class WineBuySelectView {
 

@@ -1,7 +1,7 @@
 package employees.filters;
 
+import static Wine_yejin.util.Utility.input;
 import static employees.filters.SelectedMethods.*;
-import static employees.Utility.input;
 
 public class WineSelectorByFilter {
 

@@ -35,9 +35,11 @@ public class EmpManaging {
                 //직원 삭제
                 String deleteId = input("삭제할 직원의 아이디를 입력해주세요 >>");
                 deleteEmp(deleteId);
+                break;
             case 3:
                 //직원 정보 변경
                 ChangeEmp();
+                break;
         }
 
     }
@@ -70,7 +72,8 @@ public class EmpManaging {
             empManaging();
         } else {
             pwd = input("비밀번호를 등록해주세요");
-            total.newEmployee(new Employ(name, incen, id, pwd, dept));
+            //List에 직원정보 추가
+            emp.add(new Employ(name, incen, id, pwd, dept));
             System.out.println("직원이 추가 되었습니다! Enter를 치면 mainpage로 넘어갑니다.");
             String result = input(">>");
             //엔터를 치면 main화면으로 넘어감
@@ -94,12 +97,15 @@ public class EmpManaging {
                     case 1:
                         String cname = input("변경할 이름을 입력하세요 >> ");
                         employ.setEmpName(cname);
+                        break;
                     case 2:
                         double cincentive = Double.parseDouble(input("변경할 인센티브 값을 입력하세요 >> "));
                         employ.setIncentive(cincentive);
+                        break;
                     case 3:
                         String cdept = input("변경할 부서를 입력하세요");
                         employ.setDept(cdept);
+                        break;
                     case 4:
                         String cid = input("변경할 아이디를 입력하세요");
                         boolean flag = false;
@@ -112,9 +118,13 @@ public class EmpManaging {
                         if(!flag){
                             employ.setEmpId(cid);
                         }
+                        break;
                     case 5:
                         String cpwd = input("변경할 비밀번호를 입력하세요");
                         employ.setEmpPwd(cpwd);
+                        break;
+                    default:
+                        System.out.println("다른 정보를 선택해주세요");
                 }
             }
         }

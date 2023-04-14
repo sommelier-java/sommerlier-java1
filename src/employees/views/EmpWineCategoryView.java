@@ -1,6 +1,6 @@
 package employees.views;
 
-import static employees.Utility.input;
+import static Wine_yejin.util.Utility.input;
 import static employees.filters.WineSelectorByFilter.*;
 
 public class EmpWineCategoryView {

@@ -4,24 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="664c48a0-00df-459d-9c2d-ecbce9abfb1f" name="변경" comment="" />
-=======
     <list default="true" id="664c48a0-00df-459d-9c2d-ecbce9abfb1f" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/src/employees/filters/EmpOneByOne.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Wine_yejin/Employ.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wine_yejin/Employ.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Wine_yejin/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wine_yejin/main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/employees/EmpMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/employees/EmpMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UserReal/UserWineView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserReal/UserWineView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wine_yejin/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wine_yejin/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wine_yejin/MainView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wine_yejin/MainView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/employees/EmpMainView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/employees/EmpMainView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/employees/Employees.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/employees/filters/SelectedMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/employees/filters/SelectedMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/employees/filters/WineSelectorByFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/employees/filters/WineSelectorByFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/employees/views/EmpIncenView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/employees/views/EmpIncenView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/employees/views/EmpWineCategoryView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/employees/views/EmpWineCategoryView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/employees/views/WineBuySelectView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/employees/views/WineBuySelectView.java" afterDir="false" />
     </list>
->>>>>>> 39a85f627ca29bffa34dfdeb9de3616b4fd99944
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,15 +28,6 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-<<<<<<< HEAD
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/sommerlier-java1"
-  }
-}]]></component>
-=======
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
@@ -66,7 +47,7 @@
       <recent name="D:\untitled\src" />
     </key>
   </component>
-  <component name="RunManager" selected="애플리케이션.EmpMain">
+  <component name="RunManager">
     <configuration name="EmpMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="employees.EmpMain" />
       <module name="untitled" />
@@ -114,7 +95,6 @@
       </list>
     </recent_temporary>
   </component>
->>>>>>> 39a85f627ca29bffa34dfdeb9de3616b4fd99944
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="디폴트 작업">
@@ -122,22 +102,6 @@
       <created>1681453291365</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-<<<<<<< HEAD
-      <updated>1681453291365</updated>
-    </task>
-    <servers />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-=======
       <updated>1681376359548</updated>
       <workItem from="1681383949342" duration="141000" />
       <workItem from="1681384271699" duration="5667000" />
@@ -148,6 +112,6 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
->>>>>>> 39a85f627ca29bffa34dfdeb9de3616b4fd99944
+    &gt;&gt;&gt;&gt;&gt;&gt;&gt; 39a85f627ca29bffa34dfdeb9de3616b4fd99944
   </component>
 </project>

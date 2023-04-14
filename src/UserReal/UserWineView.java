@@ -7,15 +7,15 @@ import static Wine_yejin.util.Utility.input;
 import static Wine_yejin.util.Utility.makeLine;
 
 public class UserWineView {
-    public static void main(String[] args) {
-    new UserWineView().view();
-}
+//    public static void main(String[] args) {
+//    new UserWineView().view();
+//}
     WineFilteringRepository wineRepository = new WineFilteringRepository();
 
     public void view(){
         while (true){
             System.out.println("원하시는 메뉴 번호를 입력해 주세요");
-            System.out.println("[ 1. 와인 구매 | 2. 장바구니 | 3. 구매 내역 확인 | 99. 로그아웃 ]");
+            System.out.println("[ 1. 와인 구매 | 2. 장바구니 | 3. 구매 내역 확인 | 9. 뒤로가기 | 99. 로그아웃 ]");
             String num= input(">>");
 
             switch (num){
@@ -55,6 +55,8 @@ public class UserWineView {
                         System.out.println("구매하신 와인 목록입니다.");
                         purchaseWine.stream().forEach(System.out::println); //구매한 와인 목록
                     }break;
+                case "9":
+                    return;
                 case "99":
                     System.out.println("프로그램이 종료되었습니다.");
                     System.exit(0);

@@ -1,5 +1,6 @@
 package Wine_yejin;
 
+import UserReal.UserWineView;
 import Wine_yejin.EmpManage.EmpManaging;
 
 import java.util.List;
@@ -47,7 +48,8 @@ public class MainView {
                 EmpView();
                 break;
             case 3:
-                userView();
+//                userView();
+                new UserWineView().view();
                 break;
             default:
                 System.out.println("제대로 입력해주세요");
@@ -80,7 +82,7 @@ public class MainView {
             System.out.println("로그인 성공!!!");
             System.out.println("와인 선택 페이지로 넘어갑니다 ~");
             //와인 선택 함수 보이기
-
+//            new UserWineView().view();
         } else {
             System.out.println("로그인 실패 !!! 다시 입력해주세요!");
             EmpView();
@@ -103,7 +105,7 @@ public class MainView {
                 System.out.println("로그인 성공!!!");
                 System.out.println("와인 선택 페이지로 넘어갑니다 ~");
                 //와인 선택 함수 보이기
-//                .view();
+//                new UserWineView().view();
             } else {
                 System.out.println("로그인 실패 !!! 다시 입력해주세요!");
                 userView();

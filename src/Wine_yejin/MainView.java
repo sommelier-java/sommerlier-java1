@@ -5,15 +5,21 @@ import Wine_yejin.EmpManage.EmpManaging;
 import java.util.List;
 
 import static Manager.Manage.inventoryManagement.ManagerMainView.ManagerView;
+import static Wine_yejin.TotalUserRepository.*;
 import static Wine_yejin.util.Utility.input;
 import static employees.EmpMainView.employeesMainPageView;
 
 public class MainView {
-    static TotalUserRepository totalUserRepository = new TotalUserRepository();
+    //    static TotalUserRepository totalUserRepository = new TotalUserRepository();
 //    static List<UserInfo> userInfoList = TotalUserRepository.export_user();
-    static List<Employ> employInfoList = TotalUserRepository.export_emp();
+//    static List<Employ> employInfoList = export_emp();
+//    TotalUserRepository.Employee
+    static List<UserInfo> userList = TotalUserRepository.userList;
+    static List<Employ> employList = TotalUserRepository.employList;
+
 
     public MainView() {
+
     }
 
     //    static UserInfo userInfo = new UserInfo();
@@ -25,7 +31,8 @@ public class MainView {
 
     //실행 함수
     public static void start() {
-        TotalUserRepository.getUser();
+        getUser();
+        getEmp();
         while (true) {
             MainScreen();
         }
@@ -76,7 +83,7 @@ public class MainView {
         String id, pwd;
         id = input("아이디를 입력해주세요 : ");
         pwd = input("비밀번호를 입력해주세요 : ");
-        if (totalUserRepository.LoginEmpValidate(id, pwd) == true) {
+        if (TotalUserRepository.LoginEmpValidate(id, pwd)) {
             System.out.println("로그인 성공!!!");
             System.out.println("와인 선택 페이지로 넘어갑니다 ~");
             //와인 선택 함수 보이기
@@ -99,7 +106,7 @@ public class MainView {
             id = input("아이디를 입력해주세요 : ");
             pwd = input("비밀번호를 입력해주세요 : ");
             //TotalUserRepository로 넘어가서 로그인 검증후에 논리값 리턴
-            if (totalUserRepository.LoginUserValidate(id, pwd) == true) {
+            if (TotalUserRepository.LoginUserValidate(id, pwd)) {
                 System.out.println("로그인 성공!!!");
                 System.out.println("와인 선택 페이지로 넘어갑니다 ~");
                 //와인 선택 함수 보이기
@@ -131,12 +138,9 @@ public class MainView {
         } else {
             //회원 추가하기
             //회원추가 했을때 save파일로 들어가도록!!!
-            UserInfo userInfo = new UserInfo(id, pwd, name, address, age);
-
+            userList.add(new UserInfo(id, pwd, name, address, age));
             TotalUserRepository.saveUser();
-
         }
-
 
 
     }

@@ -10,8 +10,7 @@ import java.util.List;
 import static Wine_yejin.util.Utility.input;
 
 public class EmpManaging {
-    TotalUserRepository total = new TotalUserRepository();
-    List<Employ> emp = total.export_emp();
+    List<Employ> emp = TotalUserRepository.export_emp();
 
     //직원 count함수
     public int countEmp(){

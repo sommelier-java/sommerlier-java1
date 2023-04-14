@@ -1,6 +1,10 @@
 package Wine_yejin;
 
-public class Employ {
+import java.io.Serializable;
+
+public class Employ implements Serializable {
+
+    private static final long serialVersionUID = 1L;
     private String empName;
     private double incentive;
     private String dept;

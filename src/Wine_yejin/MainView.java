@@ -42,16 +42,16 @@ public class MainView {
     //직원, 사용자, 관리자중에 선택
     public static void MainScreen() {
 
-        System.out.println("================= 사용자를 선택해주세요 ====================");
-        System.out.print("1. 관리자\n2.직원\n3.사용자");
+        System.out.println("================= 사용자를 선택해주세요💁‍ ====================");
+        System.out.print("[ 1. 관리자 | 2.직원 | 3.사용자 ]");
         System.out.println();
         switch (Integer.parseInt(input(">>"))) {
             case 1:
                 ManagerLogin();
                 break;
             case 2:
-                employeesMainPageView();
                 EmpView();
+                employeesMainPageView();
                 break;
             case 3:
                 userView();
@@ -67,13 +67,13 @@ public class MainView {
         String id = input("아이디를 입력해주세요 :");
         String pwd = input("비밀번호를 입력해주세요 :");
         if (new Manager().getManagerId().equals(id) && new Manager().getManagerPwd().equals(pwd)) {
-            System.out.println("관리자 로그인 성공!!!! ");
+            System.out.println("관리자 로그인 성공⭕");
             System.out.println("관리자 페이지로 넘어갑니다...");
             //관리자 페이지 함수 활용
 //            new EmpManaging().empManaging();
             ManagerView();
         } else {
-            System.out.println("로그인에 실패했습니다!!! 다시 입력해주세요");
+            System.out.println("로그인에 실패❌ \n다시 입력해주세요");
             ManagerLogin();
         }
     }
@@ -84,12 +84,12 @@ public class MainView {
         id = input("아이디를 입력해주세요 : ");
         pwd = input("비밀번호를 입력해주세요 : ");
         if (TotalUserRepository.LoginEmpValidate(id, pwd)) {
-            System.out.println("로그인 성공!!!");
-            System.out.println("와인 선택 페이지로 넘어갑니다 ~");
+            System.out.println("직원 로그인 성공⭕");
+            System.out.println("와인 선택 페이지로 넘어갑니다 . . .");
             //와인 선택 함수 보이기
 
         } else {
-            System.out.println("로그인 실패 !!! 다시 입력해주세요!");
+            System.out.println("로그인에 실패❌ \n다시 입력해주세요");
             EmpView();
         }
     }
@@ -98,27 +98,24 @@ public class MainView {
     //사용자 로그인 뷰
     public static void userView() {
         String id, pwd;
-        System.out.println("회원입니까??");
-        System.out.println("(y/n)");
+        String choose = input("회원입니까??  [y / n] >>");
         System.out.println();
-        String choose = input(">>");
         if (choose.equals("Y") || choose.equals("y")) {
             id = input("아이디를 입력해주세요 : ");
             pwd = input("비밀번호를 입력해주세요 : ");
             //TotalUserRepository로 넘어가서 로그인 검증후에 논리값 리턴
             if (TotalUserRepository.LoginUserValidate(id, pwd)) {
-                System.out.println("로그인 성공!!!");
-                System.out.println("와인 선택 페이지로 넘어갑니다 ~");
+                System.out.println("\n로그인 성공⭕");
+                System.out.println("와인 선택 페이지로 넘어갑니다 . . .\n");
                 //와인 선택 함수 보이기
 //                .view();
             } else {
-                System.out.println("로그인 실패 !!! 다시 입력해주세요!");
+                System.out.println("로그인에 실패❌ \n다시 입력해주세요");
                 userView();
             }
         } else {
-            System.out.println("회원가입을 해주세요!\n회원가입창으로 이동합니다...");
+            System.out.println("회원가입창으로 이동합니다...\n");
             UserMake();
-
         }
     }
 
@@ -128,12 +125,18 @@ public class MainView {
         //회원 정보 입력받기
         String id, pwd, name, address;
         id = input("아이디를 입력해주세요 :");
+        for (UserInfo userInfo : userList) {
+            if(userInfo.getUserId().contains(id)){
+                System.out.println("이미 존재하는 아이디 입니다. 다시 입력해주세요.");
+                UserMake();
+            }
+        }
         pwd = input("비밀번호를 입력해주세요 :");
         name = input("이름를 입력해주세요 : ");
         address = input("주소를 입력해주세요 : ");
         int age = Integer.parseInt(input("나이를 입력해주세요 : "));
         if (age < 20) {
-            System.out.println("미성년자는 저리가렴 !!!!!");
+            System.out.println("미성년자는 저리가라 ❗❗");
             MainScreen();
         } else {
             //회원 추가하기

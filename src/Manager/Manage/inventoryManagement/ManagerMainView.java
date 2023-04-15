@@ -2,11 +2,13 @@ package Manager.Manage.inventoryManagement;
 
 
 import Manager.Manage.UserInfo.UserManagementView;
+import Wine_yejin.EmpManage.EmpManaging;
 
 import static Wine_yejin.util.Utility.input;
 
 //관리자메인페이지
 public class ManagerMainView {
+
 
     private static int InventoryManagement;
 
@@ -29,6 +31,7 @@ public class ManagerMainView {
 
             case "3":
                 //함수
+                EmpManaging.empManaging();
 
             case "9":
 //                Main;

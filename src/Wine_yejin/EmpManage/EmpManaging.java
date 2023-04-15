@@ -20,7 +20,7 @@ public class EmpManaging {
 
     //직원 추가,삭제,변경중 선택하는 함수
     public static void empManaging() {
-        System.out.println("===============직원관리 화면==================");
+        System.out.println("===============직원관리 화면💁‍♀==================");
         System.out.println("총 " + countEmp() + "의 직원이 있습니다.");
         System.out.println("[ 1. 직원추가 | 2. 직원삭제 | 3. 직원 정보 변경 ]");
         System.out.println();

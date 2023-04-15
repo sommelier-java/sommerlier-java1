@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="664c48a0-00df-459d-9c2d-ecbce9abfb1f" name="변경" comment="sav수정필요">
+    <list default="true" id="664c48a0-00df-459d-9c2d-ecbce9abfb1f" name="변경" comment="sav파일 수정완료">
       <change afterPath="$PROJECT_DIR$/src/Wine_yejin/SaveInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Wine_yejin/EmpManage/EmpManaging.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wine_yejin/EmpManage/EmpManaging.java" afterDir="false" />
@@ -101,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681452652820</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="sav파일 수정완료">
+      <created>1681562286312</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1681562286312</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -129,7 +136,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="sav수정필요" />
-    <option name="LAST_COMMIT_MESSAGE" value="sav수정필요" />
+    <MESSAGE value="sav파일 수정완료" />
+    <option name="LAST_COMMIT_MESSAGE" value="sav파일 수정완료" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

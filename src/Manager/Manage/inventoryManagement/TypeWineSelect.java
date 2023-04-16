@@ -12,62 +12,53 @@ import static Wine_yejin.util.Utility.input;
 
 public class TypeWineSelect {
     public static void typeWineSelect() {
-        System.out.println("와인타입을 선택하세요");
-        System.out.println("1. 레드와인");
-        System.out.println("2. 화이트와인");
-        System.out.println("3. 스파클링와인");
-        System.out.println("4. 로제와인");
-        System.out.println("5. 주정강화");
-        System.out.println("9. 뒤로가기");
-        String TypeWine = input(">>>");
+        while (true) {
+//            System.out.println("\n\n원하시는 와인 타입의 번호를 입력해주세요 ");
+//            System.out.println("[ 1. 레드와인 | 2. 화이트와인 | 3. 스파클링와인 | 4. 로제와인 | 5. 주정강화 | 9. 뒤로가기 ] ");
+
+            System.out.println("\n▰▰▰▰▰▰▰  타입을 선택하세요  ▰▰▰▰▰▰▰");
+            System.out.println("\t\t\t1 . 화  이  트");
+            System.out.println("\t\t\t2 . 로      제");
+            System.out.println("\t\t\t3 . 레      드");
+            System.out.println("\t\t\t4 . 스 파 클 링");
+            System.out.println("\t\t\t5 . 주 정 강 화");
+            System.out.println("\t\t\t9 . 뒤 로 가 기");
+            System.out.println("▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰\n");
+            String TypeWine = input(">>");
 
 
-        switch (TypeWine) {
-            case "1":
-                System.out.println("==레드와인==");
-                List<Wine> RedWine = valueList.stream()
-                        .filter((w -> w.getWineType() == "레드"))
-                        .collect(Collectors.toList());
-                System.out.println(RedWine);
-                break;
+            switch (TypeWine) {
+                case "1":
+                    System.out.println("\n==레드와인==\n");
+                    TypeWineSelectMethod.redWine();
+                    break;
 
-            case "2":
-                System.out.println("==화이트와인==");
-                List<Wine> WhiteWine = valueList.stream()
-                        .filter((w -> w.getWineType() == "화이트"))
-                        .collect(Collectors.toList());
-                System.out.println(WhiteWine);
-                break;
+                case "2":
+                    System.out.println("\n==화이트와인==\n");
+                    TypeWineSelectMethod.whiteWine();
+                    break;
 
-            case "3":
-                System.out.println("==스파클링와인==");
-                List<Wine> SparklingWine = valueList.stream()
-                        .filter((w -> w.getWineType() == "스파클링"))
-                        .collect(Collectors.toList());
-                System.out.println(SparklingWine);
-                break;
+                case "3":
+                    System.out.println("\n==스파클링와인==\n");
+                    TypeWineSelectMethod.sparklingWine();
+                    break;
 
-            case "4":
-                System.out.println("==로제와인==");
-                List<Wine> RoseWine = valueList.stream()
-                        .filter((w -> w.getWineType() == "로제"))
-                        .collect(Collectors.toList());
-                System.out.println(RoseWine);
-                break;
+                case "4":
+                    System.out.println("\n==로제와인==\n");
+                    TypeWineSelectMethod.roseWine();
+                    break;
 
-            case "5":
-                System.out.println("==주정강화와인==");
-                List<Wine> ExtraAlcohol = valueList.stream()
-                        .filter((w -> w.getWineType() == "주정강화"))
-                        .collect(Collectors.toList());
-                System.out.println(ExtraAlcohol);
-                break;
+                case "5":
+                    System.out.println("\n==주정강화와인==\n");
+                    TypeWineSelectMethod.extraWine();
+                    break;
 
-            case "9":
-                InventoryManagementView.InventoryManagementView();
-                break;
+                case "9":
+                    System.out.println("뒤로 돌아갑니다.\n\n\n");
+                    return;
+
+            }
 
         }
-
     }
 }

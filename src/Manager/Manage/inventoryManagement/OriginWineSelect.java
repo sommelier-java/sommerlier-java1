@@ -10,132 +10,56 @@ import static WineRepository.TotalWine.valueList;
 import static Wine_yejin.util.Utility.input;
 
 public class OriginWineSelect {
+
     public static void OriginWineSelect() {
-        System.out.println("국가를 선택하세요");
-        System.out.println("1. 스페인");
-        System.out.println("2. 이탈리아");
-        System.out.println("3. 프랑스");
-        System.out.println("4. 미국");
-        System.out.println("5. 포르투갈");
-        System.out.println("9. 뒤로가기");
-        String OriginWine = input(">>>");
+        while (true) {
+//            System.out.println("\n\n와인별 국가 번호를 입력해주세요");
+//            System.out.println("[ 1. 스페인 | 2. 이탈리아 | 3. 프랑스 | 4. 미국 | 5. 포르투갈 | 9. 뒤로가기 ]");
+            System.out.println("\n▰▰▰▰▰▰▰  국가를 선택하세요  ▰▰▰▰▰▰▰");
+            System.out.println("\t\t\t1 . 스  페  인");
+            System.out.println("\t\t\t2 . 이 탈 리 아");
+            System.out.println("\t\t\t3 . 프  랑  스");
+            System.out.println("\t\t\t4 . 미      국");
+            System.out.println("\t\t\t5 . 포 르 투 갈");
+            System.out.println("\t\t\t9 . 뒤 로 가 기");
+            System.out.println("▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰\n");
+            String OriginWine = input(">>");
 
 
-        switch (OriginWine) {
-            case "1":
-                System.out.println("== 스페인 와인 ==");
-                List<Wine> SpainWine = valueList.stream()
-                        .filter(w -> w.getOrigin() == "스페인")
-                        .collect(Collectors.toList());
-                System.out.println(SpainWine);
+            switch (OriginWine) {
+                case "1":
+                    System.out.println("\n== 스페인 와인 ==\n");
+                    OriginWineSelectMethod.spainWine();
+                    break;
 
-                int filteredSpain = 0;
-                for (Wine obj : valueList) {
-                    if (isFiltered(obj)) { // 필터링 조건에 맞는지 확인하는 메소드 호출
-                        filteredSpain++;
-                    }
-                }
-
-                // 필터링된 객체들의 총 개수 출력
-                System.out.println("총합: " + filteredSpain);
-
-                break;
-
-            case "2":
-                System.out.println("== 이탈리아 와인 ==");
-                List<Wine> ItalyWine = valueList.stream()
-                        .filter(w -> w.getOrigin() == "이탈리아")
-                        .collect(Collectors.toList());
-                System.out.println(ItalyWine);
-
-                int filteredItaly = 0;
-                for (Wine obj : valueList) {
-                    if (isFiltered(obj)) { // 필터링 조건에 맞는지 확인하는 메소드 호출
-                        filteredItaly++;
-                    }
-                }
-
-                // 필터링된 객체들의 총 개수 출력
-                System.out.println("총합: " + filteredItaly);
-
-                break;
+                case "2":
+                    System.out.println("\n== 이탈리아 와인 ==\n");
+                    OriginWineSelectMethod.italyWine();
+                    break;
 
 
+                case "3":
+                    System.out.println("\n== 프랑스 와인 ==\n");
+                    OriginWineSelectMethod.franceWine();
+                    break;
 
+                case "4":
+                    System.out.println("\n== 미국 와인 ==\n");
+                    OriginWineSelectMethod.usaWine();
+                    break;
 
+                case "5":
+                    System.out.println("\n==포르투갈 와인==\n");
+                    OriginWineSelectMethod.portugalWine();
+                    break;
 
-            case "3":
-                System.out.println("==프랑스 와인 ==");
-                List<Wine> FranceWine = valueList.stream()
-                        .filter(w -> w.getOrigin() == "프랑스")
-                        .collect(Collectors.toList());
-                System.out.println(FranceWine);
-
-                int filteredFrance = 0;
-                for (Wine obj : valueList) {
-                    if (isFiltered(obj)) { // 필터링 조건에 맞는지 확인하는 메소드 호출
-                        filteredFrance++;
-                    }
-                }
-
-                // 필터링된 객체들의 총 개수 출력
-                System.out.println("총합: " + filteredFrance);
-
-                break;
-
-            case "4":
-                System.out.println("==미국 와인==");
-                List<Wine> USAWine = valueList.stream()
-                        .filter(w -> w.getOrigin() == "미국")
-                        .collect(Collectors.toList());
-                System.out.println(USAWine);
-
-                int filteredUSA = 0;
-                for (Wine obj : valueList) {
-                    if (isFiltered(obj)) { // 필터링 조건에 맞는지 확인하는 메소드 호출
-                        filteredUSA++;
-                    }
-                }
-
-                // 필터링된 객체들의 총 개수 출력
-                System.out.println("총합: " + filteredUSA);
-
-                break;
-
-            case "5":
-                System.out.println("==포루투갈 와인==");
-                List<Wine> PortugalWine = valueList.stream()
-                        .filter(w -> w.getOrigin() == "포루투갈")
-                        .collect(Collectors.toList());
-                System.out.println(PortugalWine);
-
-                int filteredPortugal = 0;
-                for (Wine obj : valueList) {
-                    if (isFiltered(obj)) { // 필터링 조건에 맞는지 확인하는 메소드 호출
-                        filteredPortugal++;
-                    }
-                }
-
-                // 필터링된 객체들의 총 개수 출력
-                System.out.println("총합: " + filteredPortugal);
-                break;
-
-            case "9":
-                InventoryManagementView.InventoryManagementView();
-        }
-
+                case "9":
+                    System.out.println("뒤로 돌아갑니다.\n\n\n");
+                    return;
+            }
 
         }
 
-    private static boolean isFiltered(Wine obj) {
-        if (obj.getOrigin().equals("미국")) {  ///이 부분 질문하기!!!!!!!!!!!!!!!!!!!!!!!!!!
-            return true;
-        } else {
-            return false;
-        }
     }
 
 }
-
-
-

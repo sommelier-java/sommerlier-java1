@@ -7,33 +7,33 @@ import static Wine_yejin.util.Utility.input;
 public class InventoryManagementView {
 
     public static void InventoryManagementView() {
-        System.out.println("아래 원하시는 카테고리 번호를 입력해주세요");
-        System.out.println("1. 국가별 조회하기");
-        System.out.println("2. 타입별 조회하기");
-        System.out.println("3. 전체조회하기");
-        System.out.println("9. 뒤로가기");
-        String InventoryManagementView = input(">>>");
 
-        switch (InventoryManagementView) {
-            case "1":
-                //국가별 조회
-                OriginWineSelect.OriginWineSelect();
-                break;
-            case "2":
-                //와인타입별 조회
-                TypeWineSelect.typeWineSelect();
-                break;
-            case "3":
-                //전체조회
-                 WineListSelect.showWine();
-                        break;
+        while (true) {
+            System.out.println("\n\n재고관리 페이지입니다. \n원하시는 메뉴 번호를 입력 주세요");
+            System.out.println("[ 1. 국가별 조회하기 | 2. 타입별 조회하기 | 3. 전체조회하기 | 9. 뒤로가기 ] ");
+            String InventoryManagementView = input(">>");
 
-            case "9":
-               ManagerMainView.ManagerView();
-                break;
+            switch (InventoryManagementView) {
+                case "1":
+                    //국가별 조회
+                    OriginWineSelect.OriginWineSelect();
+                    break;
+                case "2":
+                    //와인타입별 조회
+                    TypeWineSelect.typeWineSelect();
+                    break;
+                case "3":
+                    //전체조회
+                    WineListSelect.showWine();
+                    break;
+
+                case "9":
+                    System.out.println("뒤로 돌아갑니다.\n\n\n");
+                    return;
+
+            }
+
         }
 
     }
-
-
 }

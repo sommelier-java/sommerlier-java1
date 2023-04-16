@@ -2,6 +2,7 @@ package Manager.Manage.inventoryManagement;
 
 
 import Manager.Manage.UserInfo.UserManagementView;
+import Wine_yejin.EmpManage.EmpManaging;
 
 import static Wine_yejin.util.Utility.input;
 
@@ -11,27 +12,27 @@ public class ManagerMainView {
     private static int InventoryManagement;
 
     public static void ManagerView() {
-        System.out.println("아래 카테고리 중 하나를 선택해주세요");
-        System.out.println("1. 재고관리");
-        System.out.println("2. 회원관리");
-        System.out.println("3. 직원관리");
-        System.out.println("9. 뒤로가기");
-        String OriginWine = input(">>>");
+        while (true) {
+            System.out.println("\n\n관리자 페이지입니다.\n원하시는 메뉴 번호를 입력해주세요 ");
+            System.out.println("[ 1. 재고관리 | 2. 회원관리 | 3. 직원관리 | 9. 뒤로가기 ] ");
+            String OriginWine = input(">>");
 
 
-        switch (OriginWine) {
-            case "1":
-              InventoryManagementView.InventoryManagementView();
+            switch (OriginWine) {
+                case "1":
+                    InventoryManagementView.InventoryManagementView();
 
-            case "2":
-                UserManagementView.UserManagementView();
-                //함수
+                case "2":
+                    UserManagementView.UserManagementView();
+                    //함수
 
-            case "3":
-                //함수
+                case "3":
+                  //함수추가
 
-            case "9":
-//                Main;
+                case "9":
+                    System.out.println("뒤로 돌아갑니다.\n\n\n");
+                    return;
+            }
         }
     }
 }

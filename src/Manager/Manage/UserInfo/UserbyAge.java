@@ -1,25 +1,44 @@
 package Manager.Manage.UserInfo;
 
-
 import static Wine_yejin.util.Utility.input;
 
-public class UserbyAge {
+public class UserByAge {
 
-    public static void UserbyAge() {
-        System.out.println("아래 원하시는 카테고리 번호를 입력해주세요");
-        System.out.println("이름 오름차순으로 조회");
-        System.out.println("연령대별 조회"); //20~30 , 30~40, 40~50, 50~60, 60~
-        String userAge = input(">>>");
+    public static void ageGroup() {
+        while (true) {
+            System.out.println("\n\n연령대별 조회페이지입니다\n원하시는 메뉴 번호를 눌러 주세요");
+            System.out.println(" [ 1. 20대 회원 조회 | 2. 30대 회원 조회 | 3. 40대 회원 조회 | 4. 50대 회원 이상 조회 | 9. 돌아가기 ] ");
+            String userSelect = input(">>");
 
-        switch (userAge) {
-            case "1":
+            switch (userSelect) {
 
-                //이름 오름차순으로 조회
-                break;
-            case "2":
-                //연령대별 조회
-                break;
+                case "1":
+                    System.out.println("20대 고객 회원리스트입니다.");
+                    UserAgeMethod.twentyAgeUsers();
+                    break;
+
+                case "2":
+                    System.out.println("30대 고객 회원리스트입니다.");
+                    UserAgeMethod.thirtyAgeUsers();
+                    break;
+
+                case "3":
+                    System.out.println("40대 고객 회원리스트입니다.");
+                    UserAgeMethod.fortyAgeUsers();
+                    break;
+
+
+                case "4":
+                    System.out.println("50대 이상 고객 회원리스트입니다.");
+                    UserAgeMethod.overFiftyAgeUsers();
+                    break;
+
+
+                case "9":
+                    System.out.println("뒤로 돌아갑니다.\n\n\n");
+                    return;
+
+            }
         }
     }
-
 }

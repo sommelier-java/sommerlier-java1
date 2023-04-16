@@ -2,7 +2,7 @@ package Manager.Manage.UserInfo;
 
 import java.io.Serializable;
 
-public class UserInfo  implements Serializable {
+public class UserInfo extends Wine_yejin.UserInfo implements Serializable {
     private String userId;
     private String userPwd;
     private String userName;
@@ -69,12 +69,12 @@ public class UserInfo  implements Serializable {
 
     @Override
     public String toString() {
-        return "UserInfo{" +
-                "userId='" + userId + '\'' +
-                ", userPwd='" + userPwd + '\'' +
-                ", userName='" + userName + '\'' +
-                ", userAddr='" + userAddr + '\'' +
-                ", userAge=" + userAge +
-                '}';
+        return "회원조회 [ " +
+                "회원명='" + userName + '\'' +
+                ", 회원ID='" + userId + '\'' +
+                ", 회원Pwd='" + userPwd + '\'' +
+                ", 회원주소='" + userAddr + '\'' +
+                ", 회원연령=" + userAge +
+                ']';
     }
 }

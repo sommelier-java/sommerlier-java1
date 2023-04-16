@@ -49,8 +49,6 @@ public class WineBuySelectView {
             case "1" :  selectPayment();
                 wineSoldSuccessfully(wine);
                 double restIncen = logedEmpIncen - empPrice;
-                System.out.println(logedEmpIncen);
-                System.out.println("남은 인센은 " + restIncen );
                 lastPage();
                 break;
             case "2" :

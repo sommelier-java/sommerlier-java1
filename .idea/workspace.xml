@@ -4,15 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="ee68dee5-e1bd-438f-9435-908be35f297a" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UserReal/UserWineView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserReal/UserWineView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Wine_yejin/MainView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wine_yejin/MainView.java" afterDir="false" />
+=======
+    <list default="true" id="664c48a0-00df-459d-9c2d-ecbce9abfb1f" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/WineRepository/TotalWine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/WineRepository/Wine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Wine_yejin/WineView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Manager/Manage/UserInfo/AllUserList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Manager/Manage/UserInfo/SortUserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manager/Manage/UserInfo/SortUserInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Manager/Manage/UserInfo/UserInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Manager/Manage/UserInfo/UserInfoList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Manager/Manage/UserInfo/UserManagementView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Manager/Manage/UserInfo/UserSelect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Manager/Manage/UserInfo/UserbyAge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Manager/Manage/inventoryManagement/InventoryManagementView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manager/Manage/inventoryManagement/InventoryManagementView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Manager/Manage/inventoryManagement/ManagerMainView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manager/Manage/inventoryManagement/ManagerMainView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Manager/Manage/inventoryManagement/OriginWineSelect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manager/Manage/inventoryManagement/OriginWineSelect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Manager/Manage/inventoryManagement/TypeWineSelect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manager/Manage/inventoryManagement/TypeWineSelect.java" afterDir="false" />
+>>>>>>> 1a2ef8f4c89e9a9c92b02a0275569bd747071381
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -44,6 +71,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+<<<<<<< HEAD
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/sommerlier-java1&quot;,
@@ -59,6 +87,9 @@
       &quot;GitIgnore&quot;
     ]
 &gt;&gt;&gt;&gt;&gt;&gt;&gt; abdf03770e564ee3b98160fa4d606757d2eb7f55
+=======
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+>>>>>>> 1a2ef8f4c89e9a9c92b02a0275569bd747071381
   }
 }</component>
   <component name="RecentsManager">
@@ -188,6 +219,7 @@
       <map>
         <entry key="MAIN">
           <value>
+<<<<<<< HEAD
             <State>
               <option name="FILTERS">
                 <map>
@@ -201,11 +233,15 @@
                 </map>
               </option>
             </State>
+=======
+            <State />
+>>>>>>> 1a2ef8f4c89e9a9c92b02a0275569bd747071381
           </value>
         </entry>
       </map>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="VcsManagerConfiguration">
     <MESSAGE value="sav수정필요" />
     <MESSAGE value="sav파일 수정완료" />
@@ -223,4 +259,6 @@
       </breakpoints>
     </breakpoint-manager>
   </component>
+=======
+>>>>>>> 1a2ef8f4c89e9a9c92b02a0275569bd747071381
 </project>

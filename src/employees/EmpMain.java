@@ -4,9 +4,7 @@ package employees;
 import Wine_yejin.Employ;
 import java.util.List;
 
-import static employees.EmpMainView.*;
-import static employees.filters.WineSelectorByFilter.*;
-import static employees.views.WineBuySelectView.selectPayment;
+import static employees.views.EmpMainView.*;
 
 public class EmpMain {
 

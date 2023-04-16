@@ -1,4 +1,4 @@
-package employees;
+package employees.views;
 
 import Wine_yejin.Employ;
 import java.util.List;
@@ -13,7 +13,7 @@ public class EmpMainView {
 
     // 밖에 나가있는 메인 함수
     public static void empEmpview(String empId) {
-        empMainpage(empId); // 로그인 된 아이디로 이름과 인센 가져오기
+        empInformation(empId); // 로그인 된 아이디로 이름과 인센 가져오기
         employeesMainPageView();
 
     }
@@ -87,7 +87,7 @@ public class EmpMainView {
     static String logedInName = null;
     static double logedEmpIncen = 0;
     static String logedEmpDept = null;
-    public static void empMainpage(String empId) {
+    public static void empInformation(String empId) {
 
         getEmp();
 
@@ -112,7 +112,7 @@ public class EmpMainView {
             System.out.println("▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰\n");
 
             System.out.println("원하시는 메뉴 번호를 입력해 주세요\n");
-            System.out.println("[ 1. 국가별 | 2. 종류별 | 3. 가격별 | 9. 전 페이지로 돌아가기 ]");
+            System.out.println("[ 1. 국가별 | 2. 타입별 | 3. 가격별 | 9. 전 페이지로 돌아가기 ]");
             String filterNum = input(">> ");
             switch (filterNum) {
 

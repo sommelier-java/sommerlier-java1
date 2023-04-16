@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static Wine_yejin.SavePath.*;
-import static employees.EmpMainView.employeesMainPageView;
 
 public class TotalUserRepository {
 

@@ -6,7 +6,6 @@ import java.util.List;
 
 import static Manager.Manage.inventoryManagement.ManagerMainView.ManagerView;
 import static Wine_yejin.util.Utility.input;
-import static employees.EmpMainView.*;
 
 public class MainView {
     static TotalUserRepository totalUserRepository = new TotalUserRepository();

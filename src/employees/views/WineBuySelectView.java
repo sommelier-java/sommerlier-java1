@@ -7,7 +7,7 @@ import java.util.List;
 
 import static Wine_yejin.TotalUserRepository.getEmp;
 import static Wine_yejin.util.Utility.input;
-import static employees.EmpMainView.employeesMainPageView;
+import static employees.views.EmpMainView.employeesMainPageView;
 import static employees.filters.EmpOneByOne.dottedPrint;
 import static employees.filters.SelectedMethods.filteredWineList;
 public class WineBuySelectView {
@@ -61,7 +61,7 @@ public class WineBuySelectView {
                 System.exit(0);
                 break;
             default:
-                System.out.println("옵션에 있는 번호만 입력 부탁드립니다.");
+                System.out.println("\n옵션에 있는 번호만 입력 부탁드립니다.");
         }
     }
 

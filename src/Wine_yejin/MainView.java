@@ -4,7 +4,7 @@ import UserReal.UserWineView;
 
 import java.util.List;
 
-import static Manager.Manage.inventoryManagement.ManagerMainView.ManagerView;
+
 import static Wine_yejin.util.Utility.input;
 
 public class MainView {
@@ -39,7 +39,7 @@ public class MainView {
         System.out.println();
         switch (Integer.parseInt(input(">>"))) {
             case 1:
-                ManagerLogin();
+//                ManagerLogin();
                 break;
             case 2:
 //                employeesMainPageView();

@@ -11,7 +11,6 @@ public class TotalUserRepository {
     static List<UserInfo> userList = new ArrayList<>();
     static List<Employ> employList = new ArrayList<>();
 
-
     public TotalUserRepository() {
 
     }
@@ -144,4 +143,20 @@ public class TotalUserRepository {
     }
 
 
+<<<<<<< HEAD
+=======
+
+
+    //새로운 직원 추가하기
+    public static void newEmployee(Employ emp){
+        employList.add(emp);
+
+
+    }
+
+
+
+
+
+>>>>>>> hykimmerge
 }

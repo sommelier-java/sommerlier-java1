@@ -13,22 +13,27 @@ public class UserInfo  implements Serializable {
     private String userName;
     private String userAddr;
     private int userAge;
+/*    private List<Wine> userbag; //장바구니
 
-    private List<Wine> userbag;
+    private List<Wine> userbuylist; //구매내역*/
 
-//    private List<WineFilterung>
+    public UserInfo() {
 
-    public List<Wine> getUserbag() {
+    }
+
+/*    public List<Wine> getUserbag() {
         return userbag;
     }
 
     public void setUserbag(List<Wine> userbag) {
         this.userbag = userbag;
     }
-
-
-    public UserInfo() {
+    public List<Wine> getUserbuylist() {
+        return userbuylist;
     }
+    public void setUserbuylist(List<Wine> userbuylist) {
+        this.userbuylist = userbuylist;
+    }*/
 
     public UserInfo(String userId, String userPwd) {
         this.userId = userId;

@@ -1,5 +1,6 @@
 package Wine_yejin.EmpManage;
 
+import Manager.Manage.inventoryManagement.ManagerMainView;
 import Wine_yejin.Employ;
 import Wine_yejin.MainView;
 import Wine_yejin.TotalUserRepository;
@@ -7,6 +8,7 @@ import Wine_yejin.TotalUserRepository;
 import java.util.ArrayList;
 import java.util.List;
 
+import static Manager.Manage.inventoryManagement.ManagerMainView.ManagerView;
 import static Wine_yejin.TotalUserRepository.saveEmp;
 import static Wine_yejin.util.Utility.input;
 
@@ -75,11 +77,11 @@ public class EmpManaging {
             //List에 직원정보 추가
             emp.add(new Employ(name, incen, id, pwd, dept));
             saveEmp();
-            System.out.println("직원이 추가 되었습니다! Enter를 치면 mainpage로 넘어갑니다.");
+            System.out.println("직원이 추가 되었습니다! Enter를 치면 이전 페이지로 넘어갑니다.");
             String result = input(">>");
             //엔터를 치면 main화면으로 넘어감
             if (result == "\\r\\n") {
-                new MainView().MainScreen();
+                ManagerView();
             }
         }
         saveEmp();

@@ -22,12 +22,6 @@ public class MainView {
 
     }
 
-    //    static UserInfo userInfo = new UserInfo();
-//    static Employ employ = new Employ();
-//    static Manager manager = new Manager();
-
-    //와인 선택뷰
-//    WineView wineView = new WineView();
 
     //실행 함수
     public static void start() {
@@ -39,27 +33,41 @@ public class MainView {
 
     }
 
-    //직원, 사용자, 관리자중에 선택
-    public static void MainScreen() {
-
+    public static void MainScreen(){
         System.out.println("================= 사용자를 선택해주세요💁‍ ====================");
-        System.out.print("[ 1. 관리자 | 2.직원 | 3.사용자 ]");
+        System.out.print("[ 1. 회원 | 2.직원 ]");
         System.out.println();
         switch (Integer.parseInt(input(">>"))) {
+            case 1:
+                userView();
+                break;
+            case 2:
+                ManagerEmpView();
+                break;
+            default:
+                System.out.println("다시 선택해 주세요!");
+                MainScreen();
+        }
+    }
+
+
+    //직원, 사용자, 관리자중에 선택
+    public static void ManagerEmpView() {
+        System.out.print("[ 1. 관리자 | 2.직원 ]");
+        System.out.println();
+        switch (Integer.parseInt(input(">> "))){
             case 1:
                 ManagerLogin();
                 break;
             case 2:
                 EmpView();
-                employeesMainPageView();
-                break;
-            case 3:
-                userView();
                 break;
             default:
-                System.out.println("제대로 입력해주세요");
-                MainScreen();
+                System.out.println("다시 선택해 주세요 !");
+                ManagerEmpView();
         }
+
+
     }
 
     //관리자 로그인 뷰
@@ -68,12 +76,12 @@ public class MainView {
         String pwd = input("비밀번호를 입력해주세요 :");
         if (new Manager().getManagerId().equals(id) && new Manager().getManagerPwd().equals(pwd)) {
             System.out.println("관리자 로그인 성공⭕");
-            System.out.println("관리자 페이지로 넘어갑니다...");
+            System.out.println("관리자 페이지로 넘어갑니다...\n");
             //관리자 페이지 함수 활용
 //            new EmpManaging().empManaging();
             ManagerView();
         } else {
-            System.out.println("로그인에 실패❌ \n다시 입력해주세요");
+            System.out.println("로그인 실패❌ \n다시 입력해주세요\n");
             ManagerLogin();
         }
     }
@@ -84,12 +92,12 @@ public class MainView {
         id = input("아이디를 입력해주세요 : ");
         pwd = input("비밀번호를 입력해주세요 : ");
         if (TotalUserRepository.LoginEmpValidate(id, pwd)) {
-            System.out.println("직원 로그인 성공⭕");
+            System.out.println("로그인 성공⭕");
             System.out.println("와인 선택 페이지로 넘어갑니다 . . .");
             //와인 선택 함수 보이기
-
+            employeesMainPageView();
         } else {
-            System.out.println("로그인에 실패❌ \n다시 입력해주세요");
+            System.out.println("로그인 실패❌ \n다시 입력해주세요\n");
             EmpView();
         }
     }
@@ -115,12 +123,16 @@ public class MainView {
         pwd = input("비밀번호를 입력해주세요 : ");
         //TotalUserRepository로 넘어가서 로그인 검증후에 논리값 리턴
         if (TotalUserRepository.LoginUserValidate(id, pwd)) {
-            System.out.println("\n로그인 성공⭕");
-            System.out.println("와인 선택 페이지로 넘어갑니다 . . .\n");
+            System.out.println("\n로그인 성공⭕ ");
+            for (UserInfo userInfo : userList) {
+                if(userInfo.getUserId().equals(id)){
+                    System.out.println(userInfo.getUserName()+"님 환영합니다❤️ ");
+                }
+            }
             //와인 선택 함수 보이기
 //                .view();
         } else {
-            System.out.println("로그인에 실패❌ \n다시 입력해주세요");
+            System.out.println("로그인 실패❌ \n다시 입력해주세요\n");
             UserLoginAgain();
         }
 
@@ -134,7 +146,7 @@ public class MainView {
         id = input("아이디를 입력해주세요 :");
         for (UserInfo userInfo : userList) {
             if (userInfo.getUserId().contains(id)) {
-                System.out.println("이미 존재하는 아이디 입니다. 다시 입력해주세요.");
+                System.out.println("이미 존재하는 아이디 입니다. 다시 입력해주세요.\n");
                 UserMake();
             }
         }
@@ -150,6 +162,7 @@ public class MainView {
             //회원추가 했을때 save파일로 들어가도록!!!
             userList.add(new UserInfo(id, pwd, name, address, age));
             TotalUserRepository.saveUser();
+            System.out.println("회원가입 완료❤️");
         }
 
 

@@ -14,15 +14,17 @@ public class UserInfo  implements Serializable {
     private String userAddr;
     private int userAge;
 
-//    private List<Wine> userbag;
+    private List<Wine> userbag;
 
-//    public List<Wine> getUserbag() {
-//        return userbag;
-//    }
-//
-//    public void setUserbag(List<Wine> userbag) {
-//        this.userbag = userbag;
-//    }
+//    private List<WineFilterung>
+
+    public List<Wine> getUserbag() {
+        return userbag;
+    }
+
+    public void setUserbag(List<Wine> userbag) {
+        this.userbag = userbag;
+    }
 
 
     public UserInfo() {
@@ -40,7 +42,6 @@ public class UserInfo  implements Serializable {
         this.userName = userName;
         this.userAddr = userAddr;
         this.userAge = userAge;
-
     }
 
     public String getUserId() {

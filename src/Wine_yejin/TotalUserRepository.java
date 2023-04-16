@@ -69,7 +69,7 @@ public class TotalUserRepository {
             //객체를 전체 저장
             ObjectOutputStream oos = new ObjectOutputStream(fos);
             oos.writeObject(userList);
-            System.out.println("save complete");
+//            System.out.println("save complete");
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -143,9 +143,5 @@ public class TotalUserRepository {
         }
     }
 
-    //새로운 직원 추가하기
-    public static void newEmployee(Employ emp){
-        employList.add(emp);
-    }
 
 }

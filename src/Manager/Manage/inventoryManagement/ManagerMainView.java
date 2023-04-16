@@ -5,6 +5,7 @@ package Manager.Manage.inventoryManagement;
 import Manager.Manage.UserInfo.UserManagementView;
 import Wine_yejin.EmpManage.EmpManaging;
 
+import static Wine_yejin.TotalUserRepository.AddUserforManager;
 import static Wine_yejin.util.Utility.input;
 
 //관리자메인페이지
@@ -24,6 +25,7 @@ public class ManagerMainView {
                     InventoryManagementView.InventoryManagementView();
 
                 case "2":
+                    AddUserforManager();
                     UserManagementView.UserManagementView();
                     //함수
 

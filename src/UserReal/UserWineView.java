@@ -27,11 +27,15 @@ public class UserWineView {
                     else {
                         System.out.println("장바구니에 담긴 와인 목록입니다.");
                         cartWine.stream().forEach(System.out::println);  //장바구니 리스트 출력
+                        System.out.println("\n");
 
                         while (true){
                             System.out.println("구매를 원하시면 와인 이름을 입력해주세요. 9. 뒤로가기");
                             String wineWantToBuy= input(">> ");
-                            if(wineWantToBuy.equals("9")) break;
+                            if(wineWantToBuy.equals("9")) {
+                                System.out.println("\n\n");
+                                break;
+                            }
                             
                             //입력한 이름이 장바구니 리스트에 있는지
                             Wine wineInCart=wineRepository.isCartEnteredWine(wineWantToBuy);
@@ -40,7 +44,7 @@ public class UserWineView {
                                 break;
                             }
                             else{
-                                System.out.println("찾으시는 와인이 없습니다. 다시 입력해주세요.\n\n");
+                                System.out.println("찾으시는 와인이 없습니다. 다시 입력해주세요.");
                             }
                         }
                     }break;
@@ -52,7 +56,7 @@ public class UserWineView {
                     else {
                         System.out.println("구매하신 와인 목록입니다.");
                         purchaseWine.stream().forEach(System.out::println); //구매한 와인 목록
-                        System.out.println("\n\n");
+                        System.out.println("\n");
                     }break;
                 case "9":
                     return;
@@ -67,7 +71,7 @@ public class UserWineView {
     
     public void wineFiltering(){
         System.out.println("\n\n원하시는 메뉴 번호를 입력해 주세요");
-        System.out.println("[ 1. 종류 | 2. 국가 | 3. 가격 | 9. 뒤로가기 ]");
+        System.out.println("[ 1. 와인 타입 | 2. 국가 | 3. 가격 | 9. 뒤로가기 ]");
         String num= input(">> ");
 
         List<Wine> filteredWineList = new ArrayList<Wine>();
@@ -154,14 +158,20 @@ public class UserWineView {
                 printWineList(filteredWineList,3);//필터링 된 와인 출력
                 chooseWine();//필터링 된 와인에서 구매or장바구니 할 와인 선택
                 break;
+
+            case "9":{
+                System.out.println("\n");
+                return;
+            }
+            default:
+                numberWarning();
         }
     }
 
     //필터링 된 와인 출력
     public void printWineList(List<Wine> filteredWineList,int number){
-        if(filteredWineList==null) System.out.println("찾으시는 와인이 없습니다.\n\n");
+        if(filteredWineList==null) System.out.println("찾으시는 와인이 없습니다.");
         //필터링 된 와인 출력 (10개씩 보여주기 / 선택한 필터링은 안보여주기)
-            // filteredWineList.stream().limit(10).forEach(d-> System.out.println());
         else{
             switch (number){
                 case 1: //type
@@ -185,9 +195,12 @@ public class UserWineView {
 
     //필터링 된 와인에서 구매 or 장바구니 할 와인 선택 + 구매 or 장바구니 선택
     private void chooseWine(){
-        System.out.println("\n\n원하는 와인의 이름을 작성해주세요 [9 : 다시선택]");
+        System.out.println("\n\n원하는 와인의 이름을 작성해주세요 [9 : 다시선택]"); //++
         String wineName=input(">> ");
-        if(wineName.equals("9")) view();
+        if(wineName.equals("9")) {
+            System.out.println("\n");
+            view();
+        }
 
         Wine choosingWine =wineRepository.chooseWine(wineName); //선택한 와인 객체
         if(choosingWine !=null){
@@ -195,7 +208,7 @@ public class UserWineView {
         }
         //작성한 와인이 없으면
         else if(choosingWine ==null){
-            System.out.println("찾으시는 와인이 없습니다. 다시 입력해주세요.\n\n");
+            System.out.println("찾으시는 와인이 없습니다. 다시 입력해주세요.");
             chooseWine();
         }
     }
@@ -203,7 +216,8 @@ public class UserWineView {
     //구매인지 장바구니인지 물어보고 리스트에 담음
     private void askCartOrBuy(Wine choosingWine){
         WHILE:while(true){
-            System.out.println("\n\n[ 1. 바로 구매하기 | 2. 장바구니에 담기 ]");
+            System.out.println("\n");
+            System.out.println("[ 1. 바로 구매하기 | 2. 장바구니에 담기 | 9. 뒤로가기]");
             String number= input(">> ");
             switch (number){
                 case "1":
@@ -214,6 +228,8 @@ public class UserWineView {
                 case "2":
                     addCart(choosingWine);
                     break WHILE;
+                case "9" :
+                    return;
                 default:
                     numberWarning();
             }
@@ -230,11 +246,12 @@ public class UserWineView {
 
     //결제 방식 선택
     private void paymentMethod(){
-        System.out.println("\n\n결제를 진행하겠습니다.\n원하시는 결제 방식 번호를 입력해 주세요");
+        System.out.println("결제를 진행하겠습니다.");
+        System.out.println("\n\n원하시는 결제 방식 번호를 입력해 주세요");
         System.out.println("[1. 일반결제 | 2. CocoaPay | 3. NiPay ]");
-        String num=input(">> ");
+        input(">> ");
         dottedPrint();
-        System.out.println("결제가 정상적으로 완료되었습니다.\n\n");
+        System.out.println("결제가 정상적으로 완료되었습니다."); //++
     }
 
     //구매 리스트에 선택한 와인 호출
@@ -250,7 +267,7 @@ public class UserWineView {
 
     //번호 잘못 입력했을 때
     public void numberWarning(){
-        System.out.println("번호를 다시 입력해주세요\n\n");
+        System.out.println("\n\n번호를 다시 입력해주세요.");
     }
     
     //결제중 . . . 시간차 출력
@@ -267,5 +284,4 @@ public class UserWineView {
         }
         System.out.println();
     }
-
 }

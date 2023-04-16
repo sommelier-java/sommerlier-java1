@@ -68,7 +68,7 @@ public class Wine implements Serializable {
     }
 
     public String toString() {
-        return "이름= " + this.name + "', 국가= " + this.origin + "', 와인타입= " + this.wineType + "', 가격= " + this.price + "', 도수= " + this.alcohol + "'\n";
+        return "[ 이름= " + this.name + " | 국가= " + this.origin + " | 와인타입= " + this.wineType + " | 가격= " + this.price + " | 도수= " + this.alcohol + " ]";
     }
 }
 

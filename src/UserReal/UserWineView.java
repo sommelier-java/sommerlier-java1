@@ -6,9 +6,9 @@ import java.util.List;
 import static Wine_yejin.util.Utility.input;
 
 public class UserWineView {
-    public static void main(String[] args) {
+/*    public static void main(String[] args) {
     new UserWineView().view();
-}
+}*/
     WineFilteringRepository wineRepository = new WineFilteringRepository();
 
     public void view(){

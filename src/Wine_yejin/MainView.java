@@ -42,7 +42,6 @@ public class MainView {
         System.out.println();
         switch (Integer.parseInt(input(">>"))) {
             case 1:
-
                 userView();
                 break;
             case 2:
@@ -145,7 +144,7 @@ public class MainView {
                 }
             }
             //와인 선택 함수 보이기
-//                .view();
+            new UserWineView().view();
         } else {
             System.out.println("로그인 실패❌ \n다시 입력해주세요\n");
             UserLoginAgain();

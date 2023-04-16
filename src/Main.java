@@ -1,4 +1,4 @@
-package Wine_yejin;
+import Wine_yejin.MainView;
 
 public class Main {
     public static void main(String[] args) {

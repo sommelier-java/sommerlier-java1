@@ -4,9 +4,10 @@ import UserReal.UserWineView;
 
 import java.util.List;
 
-import static Manager.Manage.inventoryManagement.ManagerMainView.ManagerView;
 import static Wine_yejin.TotalUserRepository.*;
 import static Wine_yejin.util.Utility.input;
+import static employees.views.EmpMainView.empEmpview;
+import static employees.views.EmpMainView.employeesMainPageView;
 
 public class MainView {
     //    static TotalUserRepository totalUserRepository = new TotalUserRepository();
@@ -26,6 +27,7 @@ public class MainView {
     public static void start() {
         getUser();
         getEmp();
+
         while (true) {
             MainScreen();
         }
@@ -41,6 +43,8 @@ public class MainView {
                 userView();
                 break;
             case 2:
+                employeesMainPageView();
+
                 ManagerEmpView();
                 break;
             default:
@@ -56,13 +60,9 @@ public class MainView {
         System.out.println();
         switch (Integer.parseInt(input(">> "))){
             case 1:
-                ManagerLogin();
+//                ManagerLogin();
                 break;
             case 2:
-<<<<<<< HEAD
-                EmpView();
-                break;
-=======
 //                employeesMainPageView();
                 EmpView();
                 break;
@@ -70,7 +70,7 @@ public class MainView {
 //                userView();
                 new UserWineView().view();
                 break;
->>>>>>> hykimmerge
+
             default:
                 System.out.println("다시 선택해 주세요 !");
                 ManagerEmpView();
@@ -88,7 +88,7 @@ public class MainView {
             System.out.println("관리자 페이지로 넘어갑니다...\n");
             //관리자 페이지 함수 활용
 //            new EmpManaging().empManaging();
-            ManagerView();
+//            ManagerView();
         } else {
             System.out.println("로그인 실패❌ \n다시 입력해주세요\n");
             ManagerLogin();
@@ -104,13 +104,7 @@ public class MainView {
             System.out.println("로그인 성공⭕");
             System.out.println("와인 선택 페이지로 넘어갑니다 . . .");
             //와인 선택 함수 보이기
-<<<<<<< HEAD
-            employeesMainPageView();
-=======
-//            empEmpview(empId,empPwd);
 
-//            new UserWineView().view();
->>>>>>> hykimmerge
         } else {
             System.out.println("로그인 실패❌ \n다시 입력해주세요\n");
             EmpView();
@@ -123,23 +117,10 @@ public class MainView {
         String choose = input("회원입니까??  [y / n] >>");
         System.out.println();
         if (choose.equals("Y") || choose.equals("y")) {
-<<<<<<< HEAD
+
             //회원일때 로그인 반복 함수
             UserLoginAgain();
-=======
-            id = input("아이디를 입력해주세요 : ");
-            pwd = input("비밀번호를 입력해주세요 : ");
-            //TotalUserRepository로 넘어가서 로그인 검증후에 논리값 리턴
-            if (totalUserRepository.LoginUserValidate(id, pwd) == true) {
-                System.out.println("로그인 성공!!!");
-                System.out.println("와인 선택 페이지로 넘어갑니다 ~");
-                //와인 선택 함수 보이기
-//                new UserWineView();
-            } else {
-                System.out.println("로그인 실패 !!! 다시 입력해주세요!");
-                userView();
-            }
->>>>>>> hykimmerge
+
         } else {
             System.out.println("회원가입창으로 이동합니다...\n");
             UserMake();

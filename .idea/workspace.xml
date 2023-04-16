@@ -6,8 +6,24 @@
   <component name="ChangeListManager">
     <list default="true" id="664c48a0-00df-459d-9c2d-ecbce9abfb1f" name="변경" comment="커밋커밋2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Manager/Manage/UserInfo/AllUserList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manager/Manage/UserInfo/AllUserList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Manager/Manage/UserInfo/SortUserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manager/Manage/UserInfo/SortUserInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Manager/Manage/UserInfo/UserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manager/Manage/UserInfo/UserInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Manager/Manage/UserInfo/UserInfoList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manager/Manage/UserInfo/UserInfoList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Manager/Manage/UserInfo/UserManagementView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manager/Manage/UserInfo/UserManagementView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Manager/Manage/UserInfo/UserSelect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manager/Manage/UserInfo/UserSelect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Manager/Manage/UserInfo/UserbyAge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manager/Manage/UserInfo/UserbyAge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Manager/Manage/inventoryManagement/InventoryManagementView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manager/Manage/inventoryManagement/InventoryManagementView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Manager/Manage/inventoryManagement/ManagerMainView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manager/Manage/inventoryManagement/ManagerMainView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Manager/Manage/inventoryManagement/OriginWineSelect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manager/Manage/inventoryManagement/OriginWineSelect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Manager/Manage/inventoryManagement/TypeWineSelect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manager/Manage/inventoryManagement/TypeWineSelect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Manager/Manage/inventoryManagement/WineListSelect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manager/Manage/inventoryManagement/WineListSelect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wine_yejin/EmpManage/EmpManaging.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wine_yejin/EmpManage/EmpManaging.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wine_yejin/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wine_yejin/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Wine_yejin/MainView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wine_yejin/MainView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Wine_yejin/UserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wine_yejin/UserInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wine_yejin/TotalUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wine_yejin/TotalUserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wine_yejin/main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/employees/EmpMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/employees/EmpMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

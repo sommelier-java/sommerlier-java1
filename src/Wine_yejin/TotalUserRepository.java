@@ -143,8 +143,7 @@ public class TotalUserRepository {
     }
 
 
-<<<<<<< HEAD
-=======
+
 
 
     //새로운 직원 추가하기
@@ -156,7 +155,4 @@ public class TotalUserRepository {
 
 
 
-
-
->>>>>>> hykimmerge
 }

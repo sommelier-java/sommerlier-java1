@@ -4,11 +4,9 @@ import UserReal.UserWineView;
 
 import java.util.List;
 
-<<<<<<< HEAD
 
-=======
 import static Wine_yejin.TotalUserRepository.*;
->>>>>>> merge1st
+
 import static Wine_yejin.util.Utility.input;
 import static employees.views.EmpMainView.empEmpview;
 import static employees.views.EmpMainView.employeesMainPageView;
@@ -44,8 +42,7 @@ public class MainView {
         System.out.println();
         switch (Integer.parseInt(input(">>"))) {
             case 1:
-<<<<<<< HEAD
-=======
+
                 userView();
                 break;
             case 2:
@@ -66,7 +63,7 @@ public class MainView {
         System.out.println();
         switch (Integer.parseInt(input(">> "))){
             case 1:
->>>>>>> merge1st
+
 //                ManagerLogin();
                 break;
             case 2:

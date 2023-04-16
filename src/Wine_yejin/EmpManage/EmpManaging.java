@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-=======
+
 //package Wine_yejin.EmpManage;
 //
 //
@@ -147,4 +146,3 @@
 //
 //
 //}
->>>>>>> merge1st

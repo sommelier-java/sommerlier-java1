@@ -38,10 +38,10 @@ public class TotalUserRepository {
 
     //직원 로그인 검사
     public static boolean LoginEmpValidate(String empId, String empPwd){
-        getEmp();
+//        getEmp();
         boolean flag = false;
         for (Employ empInfo : employList) {
-            if(empInfo.getEmpId().equals(empId) || empInfo.getEmpPwd().equals(empPwd)){
+            if(empInfo.getEmpId().equals(empId) && empInfo.getEmpPwd().equals(empPwd)){
                 flag = true;
             }
         }

@@ -1,8 +1,8 @@
-<<<<<<< HEAD
-=======
+
 package Manager.Manage.UserInfo;
 
 
+import static Manager.Manage.inventoryManagement.ManagerMainView.ManagerView;
 import static Wine_yejin.util.Utility.input;
 
 public class UserSelect {
@@ -25,11 +25,14 @@ public class UserSelect {
 
             case "9":
                 //연령대별 조회
-                return;
+                ManagerView();
+            default:
+                System.out.printf("올바른 번호를 입력해주세요");
+                userSelect();
         }
 
     }
 }
 
 
->>>>>>> 1a2ef8f4c89e9a9c92b02a0275569bd747071381
+

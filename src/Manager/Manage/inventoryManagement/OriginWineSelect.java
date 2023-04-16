@@ -1,14 +1,7 @@
-<<<<<<< HEAD
-=======
+
 package Manager.Manage.inventoryManagement;
 
 
-import WineRepository.Wine;
-
-import java.util.List;
-import java.util.stream.Collectors;
-
-import static WineRepository.TotalWine.valueList;
 import static Wine_yejin.util.Utility.input;
 
 public class OriginWineSelect {
@@ -65,4 +58,3 @@ public class OriginWineSelect {
     }
 
 }
->>>>>>> 1a2ef8f4c89e9a9c92b02a0275569bd747071381

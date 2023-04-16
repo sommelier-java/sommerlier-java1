@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-=======
+
 package Manager.Manage.UserInfo;
 
 
@@ -22,10 +21,3 @@ public class UserInfoList {
 }
 
 
-
-
-
-
-
-
->>>>>>> 1a2ef8f4c89e9a9c92b02a0275569bd747071381

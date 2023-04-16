@@ -4,12 +4,11 @@ import UserReal.UserWineView;
 
 import java.util.List;
 
-
-import static Wine_yejin.TotalUserRepository.*;
-
+import static Manager.Manage.inventoryManagement.ManagerMainView.ManagerView;
+import static Wine_yejin.TotalUserRepository.getEmp;
+import static Wine_yejin.TotalUserRepository.getUser;
 import static Wine_yejin.util.Utility.input;
 import static employees.views.EmpMainView.empEmpview;
-import static employees.views.EmpMainView.employeesMainPageView;
 
 public class MainView {
     //    static TotalUserRepository totalUserRepository = new TotalUserRepository();
@@ -45,8 +44,6 @@ public class MainView {
                 userView();
                 break;
             case 2:
-                employeesMainPageView();
-
                 ManagerEmpView();
                 break;
             default:
@@ -63,7 +60,7 @@ public class MainView {
         switch (Integer.parseInt(input(">> "))){
             case 1:
 
-//                ManagerLogin();
+                ManagerLogin();
                 break;
             case 2:
 //                employeesMainPageView();
@@ -90,8 +87,7 @@ public class MainView {
             System.out.println("관리자 로그인 성공⭕");
             System.out.println("관리자 페이지로 넘어갑니다...\n");
             //관리자 페이지 함수 활용
-//            new EmpManaging().empManaging();
-//            ManagerView();
+            ManagerView();
         } else {
             System.out.println("로그인 실패❌ \n다시 입력해주세요\n");
             ManagerLogin();
@@ -107,6 +103,9 @@ public class MainView {
             System.out.println("로그인 성공⭕");
             System.out.println("와인 선택 페이지로 넘어갑니다 . . .");
             //와인 선택 함수 보이기
+//            employeesMainPageView();
+            empEmpview(id);
+
 
         } else {
             System.out.println("로그인 실패❌ \n다시 입력해주세요\n");

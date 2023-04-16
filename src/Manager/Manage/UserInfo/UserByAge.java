@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-=======
+
 package Manager.Manage.UserInfo;
 
 import static Wine_yejin.util.Utility.input;
@@ -44,4 +43,4 @@ public class UserByAge {
         }
     }
 }
->>>>>>> 1a2ef8f4c89e9a9c92b02a0275569bd747071381
+

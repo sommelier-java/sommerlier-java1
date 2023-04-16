@@ -1,6 +1,8 @@
 package employees.views;
 
 import Wine_yejin.Employ;
+import Wine_yejin.TotalUserRepository;
+
 import java.util.List;
 import static Wine_yejin.TotalUserRepository.getEmp;
 import static Wine_yejin.util.Utility.input;
@@ -9,11 +11,11 @@ import static employees.views.WineBuySelectView.useIncentive;
 
 public class EmpMainView {
 
-    public static List<Employ> employList;
+    static List<Employ> employList = TotalUserRepository.export_emp();
 
     // 밖에 나가있는 메인 함수
-    public static void empEmpview(String empId) {
-        empInformation(empId); // 로그인 된 아이디로 이름과 인센 가져오기
+    public static void empEmpview(String id) {
+        empInformation(id); // 로그인 된 아이디로 이름과 인센 가져오기
         employeesMainPageView();
 
     }
@@ -87,12 +89,12 @@ public class EmpMainView {
     static String logedInName = null;
     static double logedEmpIncen = 0;
     static String logedEmpDept = null;
-    public static void empInformation(String empId) {
+    public static void empInformation(String id) {
 
         getEmp();
 
         for (Employ empInfo : employList) {
-            if (empInfo.getEmpId().equals(empId)) {
+            if (empInfo.getEmpId().equals(id)) {
                 logedInName = empInfo.getEmpName();
                 logedEmpIncen = empInfo.getIncentive();
                 logedEmpDept = empInfo.getDept();

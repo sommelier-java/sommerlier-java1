@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-=======
+
 package Manager.Manage.inventoryManagement;
 
 
@@ -29,7 +28,7 @@ public class ManagerMainView {
                     //함수
 
                 case "3":
-                  //함수추가
+                    EmpManaging.empManaging();
 
                 case "9":
                     System.out.println("뒤로 돌아갑니다.\n\n\n");
@@ -38,4 +37,4 @@ public class ManagerMainView {
         }
     }
 }
->>>>>>> 1a2ef8f4c89e9a9c92b02a0275569bd747071381
+

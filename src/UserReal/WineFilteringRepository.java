@@ -19,7 +19,7 @@ public class WineFilteringRepository {
     // 와인이름으로 필터링하기
     public List<Wine> findWineByWineType(String wineType) {
         filteredWineList = valueList.stream()
-                .filter(d -> d.getWineType().equals(wineType))
+                .filter(d -> d.getWineType().contains(wineType))
                 .collect(toList());
         return filteredWineList;
     }

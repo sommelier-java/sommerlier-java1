@@ -80,18 +80,24 @@ public class UserWineView {
             case "1":
                 String wineType=null;
                 WHILE : while(true){
-                        System.out.println("\n\n필터링하실 번호를 입력해 주세요");
-                        System.out.println("[ 1. 레드 | 2. 화이트 | 3. 스파클링 | 4. 고도주 | 5. 주정강화 | 9. 뒤로가기 ]");
+                    System.out.println("\n▰▰▰▰▰▰▰  타입을 선택하세요  ▰▰▰▰▰▰▰");
+                    System.out.println("\t\t\t1 . 화  이  트");
+                    System.out.println("\t\t\t2 . 로      제");
+                    System.out.println("\t\t\t3 . 레      드");
+                    System.out.println("\t\t\t4 . 스 파 클 링");
+                    System.out.println("\t\t\t5 . 주 정 강 화");
+                    System.out.println("\t\t\t9 . 뒤 로 가 기");
+                    System.out.println("▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰\n");
                         String number= input(">> ");
                         switch (number) {
                             case "1":
-                                wineType = "레드"; break WHILE;
+                                wineType = "화이트"; break WHILE;
                             case "2":
-                                wineType = "화이트";  break WHILE;
+                                wineType = "로제";  break WHILE;
                             case "3":
-                                wineType = "스파클링"; break WHILE;
+                                wineType = "레드"; break WHILE;
                             case "4":
-                                wineType = "고도주"; break WHILE;
+                                wineType = "스파클링"; break WHILE;
                             case "5":
                                 wineType = "주정강화"; break WHILE;
                             case "9":
@@ -108,20 +114,26 @@ public class UserWineView {
             case "2":
                 String wineOrigin=null;
                 WHILE : while(true){
-                        System.out.println("\n\n필터링하실 번호를 입력해 주세요");
-                        System.out.println("[ 1. 이탈리아 | 2. 프랑스 | 3. 미국 | 4. 포르투갈 | 5. 스페인 | 9. 뒤로가기 ]");
+                        System.out.println("\n▰▰▰▰▰▰▰  국가를 선택하세요  ▰▰▰▰▰▰▰");
+                        System.out.println("\t\t\t1 . 스  페  인");
+                        System.out.println("\t\t\t2 . 이 탈 리 아");
+                        System.out.println("\t\t\t3 . 프  랑  스");
+                        System.out.println("\t\t\t4 . 미      국");
+                        System.out.println("\t\t\t5 . 포 르 투 갈");
+                        System.out.println("\t\t\t9 . 뒤 로 가 기");
+                        System.out.println("▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰\n");
                         String number= input(">> ");
                         switch (number) {
                             case "1":
-                                wineOrigin = "이탈리아"; break WHILE;
-                            case "2":
-                                wineOrigin = "프랑스"; break WHILE;
-                            case "3":
-                                wineOrigin = "미국"; break WHILE;
-                            case "4":
-                                wineOrigin = "포르투갈"; break WHILE;
-                            case "5":
                                 wineOrigin = "스페인"; break WHILE;
+                            case "2":
+                                wineOrigin = "이탈리아"; break WHILE;
+                            case "3":
+                                wineOrigin = "프랑스"; break WHILE;
+                            case "4":
+                                wineOrigin = "미국"; break WHILE;
+                            case "5":
+                                wineOrigin = "포르투갈"; break WHILE;
                             case "9":
                                 wineFiltering(); break WHILE;
                             default:
@@ -137,7 +149,13 @@ public class UserWineView {
                 double min=0,max=0;
                 WHILE : while(true){
                     System.out.println("\n\n필터링하실 번호를 입력해 주세요");
-                    System.out.println("[ 1. 5만원 미만 | 2. 5만원 이상 ~ 10만원 미만 | 3. 10만원 이상 ~ 15만원 미만 | 4. 고가와인 | 9. 뒤로가기 ]");
+                    System.out.println("\n▰▰▰▰▰▰▰  가격을 선택하세요  ▰▰▰▰▰▰▰");
+                    System.out.println("\t\t1 .  5    만   원   미   만 ");
+                    System.out.println("\t\t2 .  5만원 이상 ~ 10만원 미만");
+                    System.out.println("\t\t3 .  10만원 이상 ~ 15만원 미만");
+                    System.out.println("\t\t4 . 고  가  와  인");
+                    System.out.println("\t\t9 . 뒤  로  가  기");
+                    System.out.println("▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰\n");
                     String number= input(">> ");
                     switch (number) {
                         case "1":
@@ -161,7 +179,7 @@ public class UserWineView {
 
             case "9":{
                 System.out.println("\n");
-                return;
+                view();
             }
             default:
                 numberWarning();

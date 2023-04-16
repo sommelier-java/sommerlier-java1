@@ -4,34 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="ee68dee5-e1bd-438f-9435-908be35f297a" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserReal/UserWineView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserReal/UserWineView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Wine_yejin/MainView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wine_yejin/MainView.java" afterDir="false" />
-=======
     <list default="true" id="664c48a0-00df-459d-9c2d-ecbce9abfb1f" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/WineRepository/TotalWine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/WineRepository/Wine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Wine_yejin/WineView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Manager/Manage/UserInfo/AllUserList.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Manager/Manage/UserInfo/SortUserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manager/Manage/UserInfo/SortUserInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Manager/Manage/UserInfo/UserInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Manager/Manage/UserInfo/UserInfoList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Manager/Manage/UserInfo/UserManagementView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Manager/Manage/UserInfo/UserSelect.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Manager/Manage/UserInfo/UserbyAge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Manager/Manage/UserInfo/UserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manager/Manage/UserInfo/UserInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Manager/Manage/UserInfo/UserInfoList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manager/Manage/UserInfo/UserInfoList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Manager/Manage/UserInfo/UserManagementView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manager/Manage/UserInfo/UserManagementView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Manager/Manage/UserInfo/UserSelect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manager/Manage/UserInfo/UserSelect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Manager/Manage/UserInfo/UserbyAge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manager/Manage/UserInfo/UserByAge.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Manager/Manage/inventoryManagement/InventoryManagementView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manager/Manage/inventoryManagement/InventoryManagementView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Manager/Manage/inventoryManagement/ManagerMainView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manager/Manage/inventoryManagement/ManagerMainView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Manager/Manage/inventoryManagement/OriginWineSelect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manager/Manage/inventoryManagement/OriginWineSelect.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Manager/Manage/inventoryManagement/TypeWineSelect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manager/Manage/inventoryManagement/TypeWineSelect.java" afterDir="false" />
->>>>>>> 1a2ef8f4c89e9a9c92b02a0275569bd747071381
+      <change beforePath="$PROJECT_DIR$/src/Manager/Manage/inventoryManagement/WineListSelect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manager/Manage/inventoryManagement/WineListSelect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UserReal/UserWineView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserReal/UserWineView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UserReal/WineFilteringRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserReal/WineFilteringRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wine_yejin/EmpManage/EmpManaging.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wine_yejin/EmpManage/EmpManaging.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wine_yejin/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wine_yejin/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wine_yejin/MainView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wine_yejin/MainView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wine_yejin/TotalUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wine_yejin/TotalUserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/employees/EmpMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/employees/EmpMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/employees/views/EmpMainView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/employees/views/EmpMainView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,25 +65,8 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-<<<<<<< HEAD
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/sommerlier-java1&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/새 스크래치 파일&quot;: [
-      &quot;GitIgnore&quot;
-    ]
-&gt;&gt;&gt;&gt;&gt;&gt;&gt; abdf03770e564ee3b98160fa4d606757d2eb7f55
-=======
+
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
->>>>>>> 1a2ef8f4c89e9a9c92b02a0275569bd747071381
   }
 }</component>
   <component name="RecentsManager">
@@ -153,9 +130,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="애플리케이션.EmpMain" />
         <item itemvalue="애플리케이션.UserWineView" />
         <item itemvalue="애플리케이션.main" />
-        <item itemvalue="애플리케이션.EmpMain" />
         <item itemvalue="애플리케이션.EmpOneByOne" />
       </list>
     </recent_temporary>
@@ -219,46 +196,10 @@
       <map>
         <entry key="MAIN">
           <value>
-<<<<<<< HEAD
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="origin/minjung3" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-=======
             <State />
->>>>>>> 1a2ef8f4c89e9a9c92b02a0275569bd747071381
           </value>
         </entry>
       </map>
     </option>
   </component>
-<<<<<<< HEAD
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="sav수정필요" />
-    <MESSAGE value="sav파일 수정완료" />
-    <MESSAGE value="커밋커밋" />
-    <MESSAGE value="커밋커밋2" />
-    <option name="LAST_COMMIT_MESSAGE" value="커밋커밋2" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.io.InvalidClassException" package="java.io" />
-          <option name="timeStamp" value="1" />
-        </breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
-=======
->>>>>>> 1a2ef8f4c89e9a9c92b02a0275569bd747071381
 </project>

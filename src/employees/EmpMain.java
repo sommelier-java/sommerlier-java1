@@ -23,7 +23,7 @@ public class EmpMain {
         String empId = hong.getEmpId();
         String empPwd = hong.getEmpPwd();
 
-        empEmpview(empId);
+//        empEmpview(empId);
 //            selectPayment();
 
     }

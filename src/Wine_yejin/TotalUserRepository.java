@@ -142,17 +142,12 @@ public class TotalUserRepository {
         }
     }
 
-
-
-
-
-    //새로운 직원 추가하기
-    public static void newEmployee(Employ emp){
-        employList.add(emp);
-
-
+    public static void AddUserforManager(){
+        userList.add(new UserInfo("abcd", "1234", "조규성", "강남", 30));
+        userList.add(new UserInfo("qwer", "1234", "김민재", "서초", 28));
+        userList.add(new UserInfo("asdf", "1234", "손흥민", "대치", 32));
+        userList.add(new UserInfo("zxcv", "1234", "이강인", "역삼", 26));
     }
-
 
 
 }

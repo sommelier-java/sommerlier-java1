@@ -4,7 +4,9 @@ package Manager.Manage.inventoryManagement;
 
 import Manager.Manage.UserInfo.UserManagementView;
 import Wine_yejin.EmpManage.EmpManaging;
+import Wine_yejin.MainView;
 
+import static Wine_yejin.TotalUserRepository.AddUserforManager;
 import static Wine_yejin.util.Utility.input;
 
 //관리자메인페이지
@@ -24,6 +26,7 @@ public class ManagerMainView {
                     InventoryManagementView.InventoryManagementView();
 
                 case "2":
+                    AddUserforManager();
                     UserManagementView.UserManagementView();
                     //함수
 
@@ -31,8 +34,10 @@ public class ManagerMainView {
                     EmpManaging.empManaging();
 
                 case "9":
-                    System.out.println("뒤로 돌아갑니다.\n\n\n");
+                    MainView.MainScreen();
                     return;
+                default:
+                    System.out.println("번호를 다시 입력해주세요");
             }
         }
     }

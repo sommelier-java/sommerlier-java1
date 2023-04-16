@@ -13,6 +13,7 @@ public class UserInfo  implements Serializable {
     private String userName;
     private String userAddr;
     private int userAge;
+
 //    private List<Wine> userbag;
 
 //    public List<Wine> getUserbag() {

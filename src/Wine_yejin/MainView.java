@@ -97,26 +97,33 @@ public class MainView {
 
     //사용자 로그인 뷰
     public static void userView() {
-        String id, pwd;
         String choose = input("회원입니까??  [y / n] >>");
         System.out.println();
         if (choose.equals("Y") || choose.equals("y")) {
-            id = input("아이디를 입력해주세요 : ");
-            pwd = input("비밀번호를 입력해주세요 : ");
-            //TotalUserRepository로 넘어가서 로그인 검증후에 논리값 리턴
-            if (TotalUserRepository.LoginUserValidate(id, pwd)) {
-                System.out.println("\n로그인 성공⭕");
-                System.out.println("와인 선택 페이지로 넘어갑니다 . . .\n");
-                //와인 선택 함수 보이기
-//                .view();
-            } else {
-                System.out.println("로그인에 실패❌ \n다시 입력해주세요");
-                userView();
-            }
+            //회원일때 로그인 반복 함수
+            UserLoginAgain();
         } else {
             System.out.println("회원가입창으로 이동합니다...\n");
             UserMake();
         }
+    }
+
+    //회원일 경우 로그인 반복 함수
+    private static void UserLoginAgain() {
+        String id, pwd;
+        id = input("아이디를 입력해주세요 : ");
+        pwd = input("비밀번호를 입력해주세요 : ");
+        //TotalUserRepository로 넘어가서 로그인 검증후에 논리값 리턴
+        if (TotalUserRepository.LoginUserValidate(id, pwd)) {
+            System.out.println("\n로그인 성공⭕");
+            System.out.println("와인 선택 페이지로 넘어갑니다 . . .\n");
+            //와인 선택 함수 보이기
+//                .view();
+        } else {
+            System.out.println("로그인에 실패❌ \n다시 입력해주세요");
+            UserLoginAgain();
+        }
+
     }
 
 
@@ -126,7 +133,7 @@ public class MainView {
         String id, pwd, name, address;
         id = input("아이디를 입력해주세요 :");
         for (UserInfo userInfo : userList) {
-            if(userInfo.getUserId().contains(id)){
+            if (userInfo.getUserId().contains(id)) {
                 System.out.println("이미 존재하는 아이디 입니다. 다시 입력해주세요.");
                 UserMake();
             }

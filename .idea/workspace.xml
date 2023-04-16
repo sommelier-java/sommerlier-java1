@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="664c48a0-00df-459d-9c2d-ecbce9abfb1f" name="변경" comment="커밋커밋">
-      <change afterPath="$PROJECT_DIR$/src/Wine_yejin/SaveInfo.java" afterDir="false" />
+    <list default="true" id="664c48a0-00df-459d-9c2d-ecbce9abfb1f" name="변경" comment="커밋커밋2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Wine_yejin/EmpManage/EmpManaging.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wine_yejin/EmpManage/EmpManaging.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Wine_yejin/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wine_yejin/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Wine_yejin/MainView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wine_yejin/MainView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Wine_yejin/TotalUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wine_yejin/TotalUserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Wine_yejin/UserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wine_yejin/UserInfo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,14 +41,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.언어 디폴트 값"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.언어 디폴트 값&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\untitled\src" />
@@ -122,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681564066141</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="커밋커밋2">
+      <created>1681585638590</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1681585638590</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -152,7 +155,8 @@
     <MESSAGE value="sav수정필요" />
     <MESSAGE value="sav파일 수정완료" />
     <MESSAGE value="커밋커밋" />
-    <option name="LAST_COMMIT_MESSAGE" value="커밋커밋" />
+    <MESSAGE value="커밋커밋2" />
+    <option name="LAST_COMMIT_MESSAGE" value="커밋커밋2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

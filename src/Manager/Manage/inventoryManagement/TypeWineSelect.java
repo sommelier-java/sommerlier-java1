@@ -2,12 +2,6 @@
 package Manager.Manage.inventoryManagement;
 
 
-import WineRepository.Wine;
-
-import java.util.List;
-import java.util.stream.Collectors;
-
-import static WineRepository.TotalWine.valueList;
 import static Wine_yejin.util.Utility.input;
 
 
@@ -18,10 +12,10 @@ public class TypeWineSelect {
 //            System.out.println("[ 1. 레드와인 | 2. 화이트와인 | 3. 스파클링와인 | 4. 로제와인 | 5. 주정강화 | 9. 뒤로가기 ] ");
 
             System.out.println("\n▰▰▰▰▰▰▰  타입을 선택하세요  ▰▰▰▰▰▰▰");
-            System.out.println("\t\t\t1 . 화  이  트");
-            System.out.println("\t\t\t2 . 로      제");
-            System.out.println("\t\t\t3 . 레      드");
-            System.out.println("\t\t\t4 . 스 파 클 링");
+            System.out.println("\t\t\t1 . 레      드");
+            System.out.println("\t\t\t2 . 화  이  트");
+            System.out.println("\t\t\t3 . 스 파 클 링");
+            System.out.println("\t\t\t4 . 로      제");
             System.out.println("\t\t\t5 . 주 정 강 화");
             System.out.println("\t\t\t9 . 뒤 로 가 기");
             System.out.println("▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰\n");

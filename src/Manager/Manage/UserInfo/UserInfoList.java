@@ -15,6 +15,9 @@ public class UserInfoList {
                 new UserInfo("qwer", "1234", "김민재", "서초", 28),
                 new UserInfo("asdf", "1234", "손흥민", "대치", 32),
                 new UserInfo("zxcv", "1234", "이강인", "역삼", 26)
+
+
+
         ));
     }
 

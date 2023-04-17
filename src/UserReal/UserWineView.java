@@ -1,8 +1,11 @@
 package UserReal;
 
 import WineRepository.Wine;
+import Wine_yejin.MainView;
+
 import java.util.ArrayList;
 import java.util.List;
+
 import static Wine_yejin.util.Utility.input;
 
 public class UserWineView {
@@ -59,7 +62,8 @@ public class UserWineView {
                         System.out.println("\n");
                     }break;
                 case "9":
-                    return;
+                    MainView.start();
+                    break;
                 case "99":
                     System.out.println("프로그램이 종료되었습니다.");
                     System.exit(0);
